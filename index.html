@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Sergio Herrera | Network Admin Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <style>
+        #lang {
+          display: none;
+        }
+        .rv {
+          opacity: 1;
+          transform: none;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <div id="lang" role="dialog" aria-modal="true" aria-labelledby="lang-title">
+      <div class="lang-box">
+        <p class="cm">Sergio(config)# language</p>
+        <h1 class="lang-title" id="lang-title">Language / Idioma</h1>
+        <p class="lang-sub">Choose a language &middot; Elige un idioma</p>
+        <div class="lang-btns">
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="es">Español</button>
+        </div>
+      </div>
+    </div>
+
+    <nav id="nav">
+      <a class="logo" href="#hero">Sergio(config)#</a>
+      <div class="links">
+        <a href="#about" data-i="nav_about">about</a>
+        <a href="#skills" data-i="nav_skills">skills</a>
+        <a href="#work" data-i="nav_work">work</a>
+        <a href="#projects" data-i="nav_projects">projects</a>
+        <a href="#education" data-i="nav_education">education</a>
+        <a href="#contact" data-i="nav_contact">contact</a>
+        <div class="switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero">
+        <h1>
+          <span id="type"></span><span class="cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="lead" data-i="hero_lead">
+          Network administration student focused on Cisco networking and
+          cybersecurity. Hands-on with Cisco Packet Tracer, Windows Server and
+          Active Directory.
+        </p>
+        <div class="btns">
+          <a class="btn solid" href="#projects" data-i="hero_btn1"
+            >View my projects</a
+          >
+          <a class="btn" href="#contact" data-i="hero_btn2">Get in touch</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="cm" data-i="c_about">// about</p>
+        <h2 data-i="h_about">About</h2>
+        <div class="two rv">
+          <div>
+            <p data-i="about_p1">
+              I’m a second-year ASIR student in the Madrid region, focused on
+              networking and interested in cybersecurity. I’m currently
+              preparing for the Cisco CCNA certification and have a solid base
+              in Windows Server and Linux administration.
+            </p>
+            <p data-i="about_p2">
+              I’m resourceful and analytical: when something fails, I try to
+              understand why until I find the fix.
+            </p>
+            <p data-i="about_p3">
+              I’m looking for an environment where I can keep growing in
+              networking and take my first steps in IT security.
+            </p>
+          </div>
+          <div class="mascot"><pre class="ascii" role="img" aria-label="ASCII drawing of Sergio's mascot: a cartoon head with spiky brown hair and big round eyes" data-i-aria="mascot_alt">                                                           <i class="h">######</i>
+                                             <i class="h">########</i>    <i class="h">#########</i>
+                          <i class="h">##########</i>       <i class="h">###########</i>  <i class="h">###########</i>
+                        <i class="h">###############</i>   <i class="h">#########################</i>
+           <i class="h">####</i>       <i class="h">#############################################</i>    <i class="h">######</i>
+       <i class="h">###########</i>   <i class="h">##############################################</i> <i class="h">##########</i>
+      <i class="h">#############</i> <i class="h">##########################################################</i>
+      <i class="h">#######################################################################</i>
+       <i class="h">#########################</i><i class="a">@@@@</i><i class="h">###########</i><i class="a">@@@@@@@@@@</i><i class="h">###################</i>
+     <i class="h">#</i>   <i class="h">###################</i><i class="a">@@@@@@</i><i class="h">#################</i><i class="a">@@@@@@</i><i class="h">##################</i>
+  <i class="h">#######################</i><i class="a">@@@@@@</i><i class="h">###############</i><i class="a">@@@@@@@@@@@@@@@@@@</i><i class="h">#########</i>
+  <i class="h">#####################</i><i class="a">@@@@@@@@@@@@@@</i> <i class="a">@@@@@@@</i>          <i class="h">%%</i><i class="a">@</i>      <i class="a">@@@@</i><i class="h">###</i>
+   <i class="h">######</i><i class="a">@@@@@@@@@@</i><i class="h">#####</i><i class="a">@@@@@</i>             <i class="a">@@</i>       <i class="a">@@@@@@@@@@@</i>    <i class="a">@@@@@@@@@@@@</i>
+    <i class="h">#</i><i class="a">@@@@</i><i class="h">%</i><i class="s">:......:</i><i class="a">@@@@@@@</i>   <i class="a">@@@@@@@@</i>   <i class="a">@@@@</i><i class="s">.</i><i class="a">@@</i>      <i class="a">@@@@@@@@@</i>    <i class="a">@@@</i><i class="h">%</i><i class="s">.......:</i><i class="a">@@@</i>
+  <i class="a">@@@@</i><i class="s">:............</i><i class="a">@@@</i><i class="h">%</i>  <i class="a">@@@@@@@@</i><i class="h">%</i> <i class="a">@@@@@</i><i class="s">:...:</i><i class="a">@@@@@@@</i>        <i class="a">@@@@@@</i><i class="s">::.........</i><i class="a">@@@</i>
+ <i class="a">@@@</i><i class="s">::::..........</i><i class="a">@@@</i>    <i class="a">@@@</i><i class="h">%</i>  <i class="a">@@@@@</i><i class="s">:............:::</i><i class="h">%</i><i class="a">@@@</i><i class="h">%</i><i class="a">@</i><i class="h">%%%</i><i class="s">::..:.::::::::</i><i class="h">%</i><i class="a">@@@</i>
+ <i class="a">@@</i><i class="s">.....:::::::...:</i><i class="a">@@@@@@@@@@@@</i><i class="h">%</i><i class="s">:.............................::::::::::</i><i class="a">@@@@@</i>
+<i class="a">@@@</i><i class="s">...::::::::::......:::...................................::::::.::</i><i class="a">@@@@@</i>
+<i class="a">@@@</i><i class="s">.:::::..:::::..........::::::::::::....................:::::</i><i class="a">@@@@@@@</i>
+ <i class="a">@@@</i><i class="s">::::::.........::::.::.:::.::::........::............</i><i class="a">@@@@@@</i>
+   <i class="a">@@@@@</i><i class="s">:::::::</i><i class="h">%</i><i class="a">@@@@@@@@@@</i><i class="h">%%%%%%%%</i><i class="a">@@@@@@@@@@@@</i><i class="s">:..........</i><i class="a">@@@</i>
+       <i class="a">@@@@@@@@@</i>           <i class="a">@@@@@@@</i>         <i class="a">@@@@@@@</i><i class="s">::...:</i><i class="a">@@@</i>
+                                               <i class="a">@@@@@@@@@@@</i></pre></div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <p class="cm" data-i="c_skills">// skills</p>
+        <h2 data-i="h_skills">Skills</h2>
+        <div class="rv skills">
+          <div class="card">
+            <h3 data-i="sk_net">Networking</h3>
+            <div class="tags">
+              <span data-i="net1">Cisco routers and switches</span>
+              <span>Cisco Packet Tracer</span>
+              <span>VLANs</span>
+              <span data-i="net4">Static routing, RIP, OSPF</span>
+              <span>ACLs</span>
+              <span>NAT/PAT</span>
+              <span data-i="net7">SSH remote access</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 data-i="sk_sys">Systems</h3>
+            <div class="tags">
+              <span>Windows Server</span>
+              <span>Active Directory</span>
+              <span>Linux</span>
+              <span data-i="sys4">Virtual machines</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 data-i="sk_sec">Cybersecurity</h3>
+            <div class="tags">
+              <span data-i="sec1">Cisco ASA firewalls</span>
+              <span>VPN</span>
+              <span data-i="sec3">Man-in-the-Middle labs</span>
+              <span data-i="sec4">Cryptography basics</span>
+              <span>Wireshark</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 data-i="sk_db">Databases &amp; Hardware</h3>
+            <div class="tags">
+              <span>MySQL</span>
+              <span>Oracle</span>
+              <span data-i="db3">PC assembly and repair</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <p class="cm" data-i="c_work">// work experience</p>
+        <h2 data-i="h_work">Work</h2>
+        <div class="rv">
+          <div class="row">
+            <div class="yr">Mar – Jun 2025</div>
+            <div>
+              <h3 data-i="job_title">
+                IT Support Technician (intern), Academia Butarque
+              </h3>
+              <p data-i="job_desc">
+                Work placement for the SMR intermediate degree, in IT support.
+              </p>
+            </div>
+            <div class="where">Madrid</div>
+          </div>
+          <div class="cli">
+            <p class="cm" data-i="c_lab">// lab tools</p>
+            <pre data-ih="cli">
+Router# show tools brief
+Tool                  Status    Level
+Cisco Packet Tracer   <span class="up">up/up</span>     daily
+Windows Server        <span class="up">up/up</span>     lab
+Active Directory      <span class="up">up/up</span>     lab
+Wireshark             up/down   learning</pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="cm" data-i="c_proj">// projects</p>
+        <h2 data-i="h_proj">Projects</h2>
+        <p class="lead" data-i="proj_lead">
+          Drag the disks around. Click one to open or download the project.
+        </p>
+        <div
+          id="pile"
+          class="pile"
+          role="group"
+          aria-label="Project floppy disks"
+          data-i-aria="pile_alt"
+        ></div>
+        <ul id="plist" class="plist"></ul>
+      </section>
+
+      <section id="education">
+        <p class="cm" data-i="c_edu">// education</p>
+        <h2 data-i="h_edu">Education</h2>
+        <div class="rv">
+          <p class="cm" data-i="c_gen">// general education</p>
+          <div class="row simple">
+            <div>
+              <h3 data-i="asir_t">ASIR, Higher Vocational Degree</h3>
+              <p data-i="asir_p">
+                Administración de Sistemas Informáticos en Red. Digitech FP. In
+                progress.
+              </p>
+            </div>
+            <div class="yr" data-i="asir_y">2025 – now</div>
+          </div>
+          <div class="row simple">
+            <div>
+              <h3 data-i="smr_t">SMR, Intermediate Vocational Degree</h3>
+              <p>Sistemas Microinformáticos y Redes. Digitech FP.</p>
+            </div>
+            <div class="yr">2023 – 2025</div>
+          </div>
+          <p class="cm" style="margin-top: 2.5rem" data-i="c_badges">
+            // badges, Cisco Networking Academy
+          </p>
+          <div class="tags">
+            <span>CCNA 1</span>
+            <span data-i="badge2">Introduction to Cybersecurity</span>
+          </div>
+          <p class="cm" style="margin-top: 2.5rem" data-i="c_langs">
+            // languages
+          </p>
+          <div class="tags">
+            <span data-i="lang_en">English B2</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="cm" data-i="c_contact">// contact</p>
+        <h2 data-i="h_contact">Contact</h2>
+        <div class="rv">
+          <p class="lead" data-i="contact_lead">
+            Open to internships and junior network and systems roles, with full
+            availability. The fastest way to reach me is email.
+          </p>
+          <p>
+            <a class="mail" href="mailto:sergioherreragarcia1@gmail.com"
+              >sergioherreragarcia1@gmail.com</a
+            >
+          </p>
+          <div class="btns">
+            <a
+              class="btn"
+              href="https://github.com/Serggg22"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/sergio-herrera-garcia"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2026 Sergio Herrera</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
